@@ -100,7 +100,7 @@
   &:checked + .agreement__icon {
     padding: 4px 3px;
     background-image: url(../../images/mark.svg);
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     background-position: center;
     background-repeat: no-repeat;
 
