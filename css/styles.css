@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --main-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -13,7 +13,7 @@
   --footer-input-color: rgba(255, 255, 255, 0.3);
   --modal-input-color: rgba(33, 33, 33, 0.2);
   --projects-overlay-bg-color: rgba(33, 150, 243, 0.9);
-}
+} */
 
 /* .body {
   background-color: var(--white-color);
@@ -847,11 +847,11 @@ p {
   color: var(--white-color);
 } */
 
-.projects__item:hover .projects__overlay {
+/* .projects__item:hover .projects__overlay {
   transform: translateY(0);
-}
+} */
 
-.projects__subtitle {
+/* .projects__subtitle {
   border: 1px solid var(--header-line-color);
   padding: 20px 24px;
-}
+} */
