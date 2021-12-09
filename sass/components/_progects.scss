@@ -72,8 +72,10 @@
   color: $white-color;
 }
 
-.projects__item:hover .projects__overlay {
-  transform: translateY(0);
+.projects__item:hover {
+  .projects__overlay {
+    transform: translateY(0);
+  }
 }
 
 .projects__subtitle {
