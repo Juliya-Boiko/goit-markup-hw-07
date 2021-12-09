@@ -1,0 +1,31 @@
+.footer__subscribe {
+  margin-left: auto;
+  margin-top: 12px;
+}
+
+.footer__form {
+  display: flex;
+}
+
+.footer__form .button--primary {
+  display: flex;
+  align-items: center;
+}
+
+.footer__icon {
+  margin-left: 10px;
+}
+
+.footer__input {
+  display: inline-block;
+  min-width: 358px;
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline-style: none;
+
+  background-color: transparent;
+  color: $footer-input-color;
+}

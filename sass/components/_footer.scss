@@ -1,0 +1,45 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: $background-grey;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer__info {
+  margin-right: 70px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.footer .logo__part {
+  color: $white-color;
+}
+
+.footer__item {
+  margin-bottom: 9px;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-style: normal;
+  color: $address-link-color;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.7;
+
+  transition: color $transition-prop;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer__link.footer__map {
+  color: $white-color;
+}
