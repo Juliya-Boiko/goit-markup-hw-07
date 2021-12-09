@@ -42,16 +42,24 @@
   &:focus {
     border: 1px solid $accent-color;
   }
-}
 
-.feedback__input:focus + .feedback__icon {
-  fill: $accent-color;
+  &:focus + .feedback__icon {
+    fill: $accent-color;
+  }
 }
 
 .feedback__textarea {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+
+  .feedback__comment::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .feedback__field {
@@ -60,14 +68,6 @@
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-}
-
-.feedback__textarea .feedback__comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
 }
 
 .feedback__comment {
@@ -96,6 +96,16 @@
 .agreement__checkbox {
   appearance: none;
   position: absolute;
+
+  &:checked + .agreement__icon {
+    padding: 4px 3px;
+    background-image: url(../../images/mark.svg);
+    background-color: var(--accent-color);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: none;
+  }
 }
 
 .agreement__icon {
@@ -108,16 +118,6 @@
   transition: background-color $transition-prop,
     background-image $transition-prop;
   cursor: pointer;
-}
-
-.agreement__checkbox:checked + .agreement__icon {
-  padding: 4px 3px;
-  background-image: url(../../images/mark.svg);
-  background-color: var(--accent-color);
-  background-position: center;
-  background-repeat: no-repeat;
-
-  border: none;
 }
 
 .agreement__label {
@@ -139,11 +139,13 @@
   color: $accent-color;
 }
 
-.feedback .button--primary {
-  display: block;
-  margin: 0 auto;
+.feedback {
+  .button--primary {
+    display: block;
+    margin: 0 auto;
 
-  &:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
   }
 }
