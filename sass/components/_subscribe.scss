@@ -5,11 +5,11 @@
 
 .footer__form {
   display: flex;
-}
 
-.footer__form .button--primary {
-  display: flex;
-  align-items: center;
+  .button--primary {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer__icon {
