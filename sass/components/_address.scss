@@ -1,0 +1,29 @@
+.address-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-list__link {
+  text-decoration: none;
+  font-style: normal;
+  color: $address-link-color;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.7;
+
+  transition: color $transition-prop;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address-list__link--map {
+  @extend .address-list__link;
+  color: $white-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

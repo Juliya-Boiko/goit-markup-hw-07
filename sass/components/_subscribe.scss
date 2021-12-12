@@ -1,22 +1,17 @@
-.footer__subscribe {
+.subscribe {
   margin-left: auto;
   margin-top: 12px;
 }
 
-.footer__form {
+.subscribe__form {
   display: flex;
-
-  .button--primary {
-    display: flex;
-    align-items: center;
-  }
 }
 
-.footer__icon {
+.subscribe__icon {
   margin-left: 10px;
 }
 
-.footer__input {
+.subscribe__input {
   display: inline-block;
   min-width: 358px;
   margin-right: 12px;

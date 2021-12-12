@@ -1,0 +1,29 @@
+.feedback__textarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .feedback__comment::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.feedback__comment {
+  min-height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid $modal-input-color;
+  border-radius: 4px;
+  outline: none;
+  color: $input-color;
+
+  transition: border $transition-prop;
+
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}

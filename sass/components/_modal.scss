@@ -46,27 +46,3 @@
 
   color: $title-text-color;
 }
-
-.modal__close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-
-  justify-content: center;
-  align-items: center;
-
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: $white-color;
-
-  cursor: pointer;
-  transition: fill $transition-prop;
-
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
-}

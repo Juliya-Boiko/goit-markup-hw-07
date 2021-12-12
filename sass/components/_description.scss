@@ -1,35 +1,3 @@
 .description {
   padding: 94px 0 47px;
 }
-
-.description__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.description__item {
-  width: 270px;
-}
-
-.description__image {
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-
-  background-color: $team-section-background;
-}
-
-.description__subtitle {
-  margin-bottom: 10px;
-
-  color: $title-text-color;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  text-transform: uppercase;
-}
-
-.description__text {
-  font-size: 14px;
-  line-height: 1.7;
-}

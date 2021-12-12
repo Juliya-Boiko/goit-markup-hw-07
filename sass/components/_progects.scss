@@ -1,8 +1,4 @@
 .projects {
-  padding: 94px 0;
-}
-
-.projects__list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -78,7 +74,7 @@
   }
 }
 
-.projects__subtitle {
+.projects__description {
   border: 1px solid $header-line-color;
   padding: 20px 24px;
 }
