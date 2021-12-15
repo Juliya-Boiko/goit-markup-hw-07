@@ -3,9 +3,7 @@
 }
 
 .address-list__link {
-  text-decoration: none;
-  font-style: normal;
-  color: $address-link-color;
+  color: rgba($secondary-color, 0.6);
   font-family: inherit;
   font-size: 14px;
   line-height: 1.7;
@@ -20,7 +18,7 @@
 
 .address-list__link--map {
   @extend .address-list__link;
-  color: $white-color;
+  color: $secondary-color;
 
   &:hover,
   &:focus {

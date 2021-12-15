@@ -7,20 +7,16 @@
   display: flex;
 }
 
-.subscribe__icon {
-  margin-left: 10px;
-}
-
 .subscribe__input {
   display: inline-block;
   min-width: 358px;
   margin-right: 12px;
   padding: 15px 16px;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba($secondary-color, 0.3);
   border-radius: 4px;
   outline-style: none;
 
   background-color: transparent;
-  color: $footer-input-color;
+  color: rgba($secondary-color, 0.3);
 }

@@ -1,4 +1,4 @@
-.feedback__field {
+.input-field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -8,7 +8,7 @@
   letter-spacing: 0.01em;
 }
 
-.feedback__label {
+.input-field-label {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -20,11 +20,11 @@
   letter-spacing: 0.01em;
 }
 
-.feedback__group-absolute {
+.input-field__group-absolute {
   position: relative;
 }
 
-.feedback__icon {
+.input-field__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -32,14 +32,14 @@
   transition: fill $transition-prop;
 }
 
-.feedback__input {
+.input-field__input {
   width: 100%;
   padding: 11px 12px 11px 42px;
-  border: 1px solid $modal-input-color;
+  border: 1px solid rgba($main-color-shadow-var2, 0.2);
   outline: none;
   border-radius: 4px;
 
-  color: $input-color;
+  color: $main-color;
 
   transition: border $transition-prop;
 
@@ -47,7 +47,7 @@
     border: 1px solid $accent-color;
   }
 
-  &:focus + .feedback__icon {
+  &:focus + .input-field__icon {
     fill: $accent-color;
   }
 }

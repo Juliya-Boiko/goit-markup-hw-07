@@ -292,7 +292,7 @@
         <section class="section">
             <div class="container">
                 <h2 class="title">Постоянные клиенты</h2>
-                <ul class="clients__list">
+                <ul class="clients">
                     <li class="clients__item">
                         <a href="" class="client__link">
                             <svg width="106" height="60">
@@ -344,7 +344,7 @@
 
     <!--Footer section-->
     <footer class="footer">
-        <div class="container">
+        <div class="footer__container">
             <div class="footer__info">
                 <div class="footer__logo"><a href="/" class="logo">Web<span class="logo__studio--secondary">Studio</span></a></div>
                 <address>
@@ -402,7 +402,7 @@
                     <input type="text" placeholder="E-mail" class="subscribe__input">
                     <button type="submit" class="primary-button--flex">
                         <span>Подписаться</span>
-                        <svg width="24" height="24" class="subscribe__icon">
+                        <svg width="24" height="24" class="primary-button__icon">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
@@ -419,40 +419,40 @@
                 </svg>
             </button>
             <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-            <form class="feedback">
-                <div class="feedback__field">
-                    <label for="name" class="feedback__label">Имя</label>
-                    <div class="feedback__group-absolute">
-                        <input type="text" id="name" name="name" class="feedback__input">
-                        <svg width="18" height="18" class="feedback__icon">
+            <form>
+                <div class="input-field">
+                    <label for="name" class="input-field-label">Имя</label>
+                    <div class="input-field__group-absolute">
+                        <input type="text" id="name" name="name" class="input-field__input">
+                        <svg width="18" height="18" class="input-field__icon">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </div>
                 </div>
 
-                <div class="feedback__field">
-                    <label for="tel" class="feedback__label">Телефон</label>
-                    <div class="feedback__group-absolute">
-                        <input type="tel" name="tel" id="tel" class="feedback__input">
-                        <svg width="18" height="18" class="feedback__icon">
+                <div class="input-field">
+                    <label for="tel" class="input-field-label">Телефон</label>
+                    <div class="input-field__group-absolute">
+                        <input type="tel" name="tel" id="tel" class="input-field__input">
+                        <svg width="18" height="18" class="input-field__icon">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
                 </div>
                 
-                <div class="feedback__field">
-                    <label for="email" class="feedback__label">Почта</label>
-                    <div class="feedback__group-absolute">
-                        <input type="email" name="e-mail" id="email" class="feedback__input">
-                        <svg width="18" height="18" class="feedback__icon">
+                <div class="input-field">
+                    <label for="email" class="input-field-label">Почта</label>
+                    <div class="input-field__group-absolute">
+                        <input type="email" name="e-mail" id="email" class="input-field__input">
+                        <svg width="18" height="18" class="input-field__icon">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
                 </div>
                 
-                <div class="feedback__textarea">
-                    <label for="comment" class="feedback__field">Комментарий</label>
-                    <textarea name="comment" id="comment" placeholder="Введите текст" class="feedback__comment"></textarea>
+                <div class="textarea-field">
+                    <label for="comment" class="input-field-label">Комментарий</label>
+                    <textarea name="comment" id="comment" placeholder="Введите текст" class="textarea-field__input"></textarea>
                 </div>
                 
                 <div class="agreement">
@@ -464,7 +464,7 @@
                     <a href="" class="agreement__link">Условия договора</a>
                 </div>
                 
-                <button type="submit" class="primary-button--modal">Отправить</button>
+                <button type="submit" class="primary-button">Отправить</button>
             </form>
         </div>
     </div>

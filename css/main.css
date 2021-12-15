@@ -12,6 +12,11 @@ p {
   margin: 0;
 }
 
+.address-list__link, .address-list__link--map {
+  text-decoration: none;
+  font-style: normal;
+}
+
 .body {
   background-color: #ffffff;
   color: #757575;
@@ -19,7 +24,7 @@ p {
   letter-spacing: 0.03em;
 }
 
-.container {
+.container, .footer__container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -51,7 +56,13 @@ p {
   overflow: hidden;
 }
 
-.primary-button, .primary-button--flex, .primary-button--modal {
+.description {
+  padding: 94px 0 47px;
+}
+
+.primary-button, .primary-button--flex {
+  display: block;
+  margin: 0 auto;
   min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
@@ -67,18 +78,17 @@ p {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.primary-button:hover, .primary-button--flex:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.primary-button__icon {
+  margin-left: 10px;
+}
+
 .primary-button--flex {
   display: flex;
   align-items: center;
-}
-
-.primary-button--modal {
-  display: block;
-  margin: 0 auto;
-}
-
-.primary-button--modal:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .secondary-button {
@@ -238,10 +248,6 @@ p {
   text-transform: uppercase;
 }
 
-.description {
-  padding: 94px 0 47px;
-}
-
 .description-list {
   display: flex;
   justify-content: space-between;
@@ -381,7 +387,7 @@ p {
   background-color: #2196f3;
 }
 
-.clients__list {
+.clients {
   display: flex;
 }
 
@@ -409,7 +415,7 @@ p {
   background-color: #2f303a;
 }
 
-.footer .container {
+.footer__container {
   display: flex;
 }
 
@@ -421,13 +427,24 @@ p {
   margin-bottom: 20px;
 }
 
+.footer__join {
+  margin-top: 12px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 .address-list__link, .address-list__link--map {
-  text-decoration: none;
-  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   font-family: inherit;
   font-size: 14px;
@@ -447,19 +464,6 @@ p {
   color: #2196f3;
 }
 
-.footer__join {
-  margin-top: 12px;
-}
-
-.footer__title {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
 .subscribe {
   margin-left: auto;
   margin-top: 12px;
@@ -467,10 +471,6 @@ p {
 
 .subscribe__form {
   display: flex;
-}
-
-.subscribe__icon {
-  margin-left: 10px;
 }
 
 .subscribe__input {
@@ -528,7 +528,7 @@ p {
   color: #212121;
 }
 
-.feedback__field {
+.input-field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -537,7 +537,7 @@ p {
   letter-spacing: 0.01em;
 }
 
-.feedback__label {
+.input-field-label {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -547,11 +547,11 @@ p {
   letter-spacing: 0.01em;
 }
 
-.feedback__group-absolute {
+.input-field__group-absolute {
   position: relative;
 }
 
-.feedback__icon {
+.input-field__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -559,7 +559,7 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.feedback__input {
+.input-field__input {
   width: 100%;
   padding: 11px 12px 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -569,28 +569,28 @@ p {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.feedback__input:focus {
+.input-field__input:focus {
   border: 1px solid #2196f3;
 }
 
-.feedback__input:focus + .feedback__icon {
+.input-field__input:focus + .input-field__icon {
   fill: #2196f3;
 }
 
-.feedback__textarea {
+.textarea-field {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.feedback__textarea .feedback__comment::placeholder {
+.textarea-field .textarea-field__input::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: rgba(117, 117, 117, 0.502);
 }
 
-.feedback__comment {
+.textarea-field__input {
   min-height: 120px;
   padding: 12px 16px;
   resize: none;
@@ -601,7 +601,7 @@ p {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.feedback__comment:focus {
+.textarea-field__input:focus {
   border: 1px solid #2196f3;
 }
 
@@ -717,7 +717,7 @@ p {
   width: 100%;
   height: 100%;
   padding: 63px 24px;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: rgba(33, 150, 243, 0.902);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

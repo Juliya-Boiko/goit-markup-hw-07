@@ -1,5 +1,5 @@
 .team {
-  background-color: $team-section-background;
+  background-color: $secondary-color-shadow;
 }
 
 .team-list {
@@ -8,10 +8,10 @@
 }
 
 .team-list__item {
-  background-color: $white-color;
+  background-color: $secondary-color;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba($main-color, 0.12),
+    0px 1px 1px rgba($main-color, 0.14), 0px 2px 1px rgba($main-color, 0.2);
 
   &:not(:last-child) {
     margin-right: 30px;
@@ -25,7 +25,7 @@
 .team-list__name {
   margin-bottom: 10px;
 
-  color: $title-text-color;
+  color: $main-color-shadow-var2;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;

@@ -1,4 +1,4 @@
-.clients__list {
+.clients {
   display: flex;
 }
 
@@ -10,10 +10,10 @@
   display: block;
   padding: 16px 32px;
   border: 1px solid;
-  border-color: $logo-color;
+  border-color: $secondary-color-shadow-var2;
   border-radius: 4px;
 
-  fill: $logo-color;
+  fill: $secondary-color-shadow-var2;
 
   transition: fill $transition-prop, border-color $transition-prop;
 

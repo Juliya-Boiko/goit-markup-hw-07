@@ -1,11 +1,12 @@
 .footer {
   padding: 60px 0;
 
-  background-color: $background-grey;
+  background-color: $main-color-shadow;
+}
 
-  .container {
-    display: flex;
-  }
+.footer__container {
+  @extend .container;
+  display: flex;
 }
 
 .footer__info {
@@ -14,4 +15,18 @@
 
 .footer__logo {
   margin-bottom: 20px;
+}
+
+.footer__join {
+  margin-top: 12px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: $secondary-color;
 }

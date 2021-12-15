@@ -1,6 +1,6 @@
 .body {
-  background-color: $white-color;
-  color: $main-text-color;
+  background-color: $secondary-color;
+  color: $main-color-shadow-light;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
@@ -18,7 +18,7 @@
 .title {
   margin-bottom: 50px;
 
-  color: $title-text-color;
+  color: $main-color-shadow-var2;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -37,4 +37,8 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.description {
+  padding: 94px 0 47px;
 }

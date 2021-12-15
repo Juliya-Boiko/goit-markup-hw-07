@@ -15,21 +15,21 @@
   display: block;
   padding: 12px 12px;
 
-  fill: $logo-color;
+  fill: $secondary-color-shadow-var2;
 
   transition: background-color $transition-prop, fill $transition-prop;
 
   &:hover,
   &:focus {
     background-color: $accent-color;
-    fill: $white-color;
+    fill: $secondary-color;
   }
 }
 
 .social__link--background {
   @extend .social__link;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: $white-color;
+  background-color: rgba($secondary-color, 0.1);
+  fill: $secondary-color;
 
   &:hover,
   &:focus {
