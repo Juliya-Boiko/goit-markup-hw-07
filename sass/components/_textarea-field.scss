@@ -16,7 +16,8 @@
   min-height: 120px;
   padding: 12px 16px;
   resize: none;
-  border: 1px solid rgba($main-color-shadow-var2, 0.2);
+
+  @include bordered(rgba($main-color-shadow-var2, 0.2));
   border-radius: 4px;
   outline: none;
   color: $main-color;
@@ -24,6 +25,6 @@
   transition: border $transition-prop;
 
   &:focus {
-    border: 1px solid $accent-color;
+    @include bordered($accent-color);
   }
 }

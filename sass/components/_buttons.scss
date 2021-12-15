@@ -1,21 +1,20 @@
 .primary-button {
+  @extend %button;
+
   display: block;
   margin: 0 auto;
   min-width: 200px;
-  border-radius: 4px;
+
   padding: 10px 32px;
   border: none;
+
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
 
   background-color: $accent-color;
   color: $secondary-color;
 
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
-
-  cursor: pointer;
   transition: box-shadow $transition-prop;
 
   &:hover {
@@ -34,18 +33,16 @@
 }
 
 .secondary-button {
+  @extend %button;
+
   padding: 6px 22px;
+
+  font-weight: 500;
+  line-height: 1.6;
 
   background-color: $secondary-color-shadow;
   color: $main-color-shadow-var2;
   border-color: transparent;
-  border-radius: 4px;
-
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  cursor: pointer;
 
   transition: background-color $transition-prop, color $transition-prop,
     box-shadow $transition-prop;
@@ -60,6 +57,7 @@
 }
 
 .close-button {
+  @include bordered(rgba($main-color, 0.1));
   position: absolute;
   top: 8px;
   right: 8px;
@@ -71,7 +69,6 @@
   justify-content: center;
   align-items: center;
 
-  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: $secondary-color;
 
   cursor: pointer;

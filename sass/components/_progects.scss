@@ -11,8 +11,7 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0px 1px 3px rgba($main-color, 0.12),
-      0px 1px 1px rgba($main-color, 0.14), 0px 2px 1px rgba($main-color, 0.2);
+    box-shadow: $box-shadow;
   }
 
   &:nth-child(3n) {
@@ -75,6 +74,6 @@
 }
 
 .projects__description {
-  border: 1px solid $main-color-shadow-var3;
+  @include bordered($main-color-shadow-var3);
   padding: 20px 24px;
 }

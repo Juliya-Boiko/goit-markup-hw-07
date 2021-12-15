@@ -35,7 +35,8 @@
 .input-field__input {
   width: 100%;
   padding: 11px 12px 11px 42px;
-  border: 1px solid rgba($main-color-shadow-var2, 0.2);
+
+  @include bordered(rgba($main-color-shadow-var2, 0.2));
   outline: none;
   border-radius: 4px;
 
@@ -44,7 +45,7 @@
   transition: border $transition-prop;
 
   &:focus {
-    border: 1px solid $accent-color;
+    @include bordered($accent-color);
   }
 
   &:focus + .input-field__icon {
