@@ -67,6 +67,16 @@ p {
   padding: 94px 0 47px;
 }
 
+.label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
 .primary-button, .primary-button--flex {
   display: block;
   margin: 0 auto;
@@ -463,16 +473,16 @@ p {
   color: #2196f3;
 }
 
-.subscribe {
+.footer-subscribe {
   margin-left: auto;
   margin-top: 12px;
 }
 
-.subscribe__form {
+.footer-subscribe__form {
   display: flex;
 }
 
-.subscribe__input {
+.footer-subscribe__input {
   display: inline-block;
   min-width: 358px;
   margin-right: 12px;
@@ -531,16 +541,6 @@ p {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-}
-
-.input-field-label {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
